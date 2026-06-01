@@ -3,7 +3,7 @@
 -  **MicroCompact**：工具结果时间基裁剪（超过 5 分钟自动压缩）
 -  **AutoCompact**：Token 阈值触发压缩（超过 100K tokens 自动触发）
 -  **Manual Compact**：用户手动触发压缩
-- **节省 82.5% Token 消耗**，支持 128K+ 长上下文会话
+
 
 ### 2. 记忆管理系统
 - **Session Memory**：会话记忆（短期，会话结束释放）
