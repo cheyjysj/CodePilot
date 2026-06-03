@@ -6,6 +6,7 @@
 
 import os
 import json
+import yaml
 from typing import Any, Dict, List, Optional
 
 
@@ -112,7 +113,7 @@ class SkillLoader:
             # 解析 YAML front matter
             if content.startswith('---'):
                 _, front_matter, skill_content = content.split('---', 2)
-                metadata = json.loads(front_matter)  # 简化：假设是 JSON
+                metadata = yaml.safe_load(front_matter)
                 
                 skill = SkillDefinition(
                     name=metadata.get('name', os.path.basename(file_path)),
